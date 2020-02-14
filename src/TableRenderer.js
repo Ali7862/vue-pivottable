@@ -1,8 +1,8 @@
 import { PivotData } from './helper/utils'
 import defaultProps from './helper/defaultProps'
 function redColorScaleGenerator (values) {
-  const min = Math.min.apply(Math, values)
-  const max = Math.max.apply(Math, values)
+  const min = 0
+  const max = 200
   return x => {
     // eslint-disable-next-line no-magic-numbers
     const nonRed = 255 - Math.round(255 * (x - min) / (max - min))
